@@ -15,9 +15,6 @@ def checkForUpdate():
 
 	#read stderr to a string
 	str = p.stdout.read();
-	print "tjeriotjeroi {0}".format(str)
-
-	#split it
 	updates = int(str)
 
 	#if result is non zero, tweet it
