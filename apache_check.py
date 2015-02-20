@@ -12,7 +12,7 @@ def checkIfApacheIsRunning():
 		cur_date = time.strftime("%x")
 		cur_time = time.strftime("%X")
 		tweet = "{0} - {1} - Apache is not running!".format(cur_date, cur_time)
-		twitter = subprocess.Popen("/usr/local/bin/twitter -edeadbird.fr@gmail.com set {0}".format(tweet), stderr=subprocess.PIPE, shell=True)
+		twitter = subprocess.Popen("/usr/local/bin/twitter -eyouremail@domain.com set {0}".format(tweet), stderr=subprocess.PIPE, shell=True)
 
 
 if __name__ == '__main__':
